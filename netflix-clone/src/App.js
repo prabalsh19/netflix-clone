@@ -1,13 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Row from "./Row";
 import requests from "./request";
-import Banner from "./Banner"
+import Banner from "./Banner";
+import Nav from "./Nav";
+
 function App() {
   return (
     <div className="App">
-
-    <Banner />
+      <Nav />
+      <Banner />
       <Row
         title="Netflix Originals"
         fetchURL={requests.fetchNetflixOriginals}
